@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 const SpainGuide = () => (
   <>
-    <section className="page-hero">
-      <div className="container">
+    <section className="page-hero" style={{ backgroundImage: "url('/images/plaza de espana sign.webp')", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(28,25,23,0.75) 0%,rgba(92,107,58,0.55) 100%)" }}></div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / <Link to="/portugal-vs-spain">Compare</Link> / Spain Guide</div>
         <h1>Healthcare in Spain for Americans</h1>
         <p>Healthcare in Spain for Americans relocating from the U.S. — navigating regional healthcare structures.</p>
@@ -13,6 +14,7 @@ const SpainGuide = () => (
       <div className="container">
         <div className="prose-content">
           <h2 className="serif">Understanding Spain's Healthcare System</h2>
+          <img src="/images/spain cafe.webp" alt="Woman at a café window in Spain" style={{ width: "100%", borderRadius: "1rem", margin: "1.5rem 0", objectFit: "cover", maxHeight: 320 }} loading="lazy" />
           <p>Spain's public healthcare system — the Sistema Nacional de Salud (SNS) — is administered regionally by Spain's 17 autonomous communities. This means the experience can vary significantly depending on where you live, from Catalonia to Andalusia to the Basque Country.</p>
           <p>For Americans, the biggest adjustment is understanding that Spain's system is not insurance-based. Access is tied to residency registration (empadronamiento) and enrollment in the public system.</p>
           <h2 className="serif">Public vs Private Healthcare in Spain</h2>

@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 const PortugalGuide = () => (
   <>
-    <section className="page-hero">
-      <div className="container">
+    <section className="page-hero" style={{ backgroundImage: "url('/images/portugal trams.webp')", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(28,25,23,0.75) 0%,rgba(92,107,58,0.55) 100%)" }}></div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / <Link to="/portugal-vs-spain">Compare</Link> / Portugal Guide</div>
         <h1>Healthcare in Portugal for Americans</h1>
         <p>Healthcare in Portugal for Americans moving from the U.S. — a practical, plain-English guide.</p>
@@ -13,6 +14,7 @@ const PortugalGuide = () => (
       <div className="container">
         <div className="prose-content">
           <h2 className="serif">Understanding the SNS</h2>
+          <img src="/images/pharmacy portugal.webp" alt="Glowing green pharmacy cross on a Lisbon street" style={{ width: "100%", borderRadius: "1rem", margin: "1.5rem 0", objectFit: "cover", maxHeight: 320 }} loading="lazy" />
           <p>Portugal's public healthcare system — the Serviço Nacional de Saúde (SNS) — provides universal coverage to residents. As an American relocating to Portugal, you can access the SNS once you establish legal residency and register with a local health center (Centro de Saúde).</p>
           <p>The adjustment is less about quality — and more about expectations. The SNS works differently from U.S. insurance-based thinking, and understanding the structure upfront reduces frustration significantly.</p>
           <h2 className="serif">Public vs Private Healthcare in Portugal</h2>

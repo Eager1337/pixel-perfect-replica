@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 const Resources = () => (
   <>
-    <section className="page-hero">
-      <div className="container">
+    <section className="page-hero" style={{ backgroundImage: "url('/images/portugal square.webp')", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(28,25,23,0.75) 0%,rgba(92,107,58,0.55) 100%)" }}></div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / Resources</div>
         <h1>Healthcare Planning Resources</h1>
         <p>Practical, plain-English guides designed specifically for Americans moving to Portugal or Spain.</p>

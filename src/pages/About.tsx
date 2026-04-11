@@ -1,65 +1,16 @@
 import { Link } from "react-router-dom";
 
-const IMG = "https://sensationalbilly.github.io/Iberiahealthconnect/images";
-
 const About = () => (
   <>
-    <section className="about-hero">
-      <div className="about-hero-overlay"></div>
-      <div className="about-hero-split">
-        <div className="about-hero-text">
-          <div className="breadcrumb" style={{ color: "rgba(255,255,255,0.45)", marginBottom: "1.25rem" }}><Link to="/" style={{ color: "rgba(255,255,255,0.6)" }}>Home</Link> / About</div>
-          <div className="hero-badge" style={{ marginBottom: "1.25rem", background: "rgba(168,192,96,0.15)", borderColor: "rgba(168,192,96,0.3)" }}>
-            <span className="badge-dot" style={{ background: "#a8c060", boxShadow: "0 0 0 3px rgba(168,192,96,0.25)" }}></span>
-            Healthcare Navigation Experts
-          </div>
-          <h1 className="serif about-hero-title">
-            Built by Americans,<br /><em>for</em> Americans<br />moving abroad.
-          </h1>
-          <p className="about-hero-sub">We've navigated the U.S., Portuguese, and Spanish healthcare systems firsthand — so you don't have to figure it out alone.</p>
-          <div className="about-pills-row" style={{ marginBottom: "2.5rem" }}>
-            {["Calm", "Structured", "Empathetic"].map((p) => (
-              <span className="about-pill" key={p}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
-                {p}
-              </span>
-            ))}
-          </div>
-          <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-            <Link to="/contact" className="btn btn-accent btn-lg">Book a free consultation</Link>
-            <a href="#approach" className="btn btn-ghost-white">Our Approach ↓</a>
-          </div>
-          <div className="hero-stats" style={{ marginTop: "2.5rem", background: "rgba(255,255,255,0.07)", borderColor: "rgba(255,255,255,0.12)" }}>
-            <div className="stat"><span className="stat-num">3</span><span className="stat-label">Countries</span></div>
-            <div className="stat-divider"></div>
-            <div className="stat"><span className="stat-num">3</span><span className="stat-label">Service Tiers</span></div>
-            <div className="stat-divider"></div>
-            <div className="stat"><span className="stat-num">15<small>min</small></span><span className="stat-label">Free Call</span></div>
-          </div>
-        </div>
-        <div className="about-hero-img-col">
-          <div className="about-hero-mockup-wrap">
-            <img src={`${IMG}/doctor.webp`} alt="Healthcare professional" className="about-hero-doctor-img" />
-            <div className="hero-float-card about-float-trust">
-              <div className="hero-float-icon green">
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <div>
-                <div className="hero-float-title">Expert-backed</div>
-                <div className="hero-float-sub">U.S. · Portugal · Spain</div>
-              </div>
-            </div>
-            <div className="hero-float-card about-float-stat">
-              <div>
-                <div style={{ fontSize: "1.6rem", fontFamily: "var(--font-serif)", fontWeight: 700, color: "var(--primary)", lineHeight: 1 }}>3</div>
-                <div style={{ fontSize: "0.68rem", textTransform: "uppercase", letterSpacing: "0.08em", fontWeight: 700, color: "var(--muted-foreground)", marginTop: "0.2rem" }}>Countries of expertise</div>
-              </div>
-            </div>
-            <div className="about-float-pill">
-              <span style={{ width: 7, height: 7, borderRadius: "50%", background: "#a8c060", flexShrink: 0 }}></span>
-              Free 15-min call available
-            </div>
-          </div>
+    <section className="page-hero" style={{ backgroundImage: "url('/images/couple market portugal.webp')", backgroundSize: "cover", backgroundPosition: "center top", position: "relative", minHeight: 420, display: "flex", alignItems: "flex-end" }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(105deg,rgba(5,15,5,0.82) 0%,rgba(5,15,5,0.55) 55%,rgba(5,15,5,0.15) 100%)" }}></div>
+      <div className="container" style={{ position: "relative", zIndex: 1, paddingBottom: "3rem" }}>
+        <div className="breadcrumb"><Link to="/">Home</Link> / About</div>
+        <h1>Built by Americans, <em style={{ fontStyle: "italic", color: "var(--accent)" }}>for</em> Americans moving abroad.</h1>
+        <p style={{ maxWidth: 560, color: "rgba(255,255,255,0.85)", marginTop: "0.75rem" }}>We've navigated the U.S., Portuguese, and Spanish healthcare systems firsthand — so you don't have to figure it out alone.</p>
+        <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap", marginTop: "1.5rem" }}>
+          <Link to="/contact" className="btn btn-accent btn-lg">Book a free consultation</Link>
+          <a href="#approach" className="btn btn-ghost-white">Our Approach ↓</a>
         </div>
       </div>
     </section>
@@ -76,43 +27,53 @@ const About = () => (
           </div>
           <div className="about-approach-mockup">
             <div className="about-mockup-card">
-              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=800&q=85" alt="Professional healthcare navigator" style={{ width: "100%", borderRadius: "1rem" }} loading="lazy" />
+              <img src="/images/young family portugal.webp" alt="Family in Portugal — warm and celebratory" className="about-mockup-img" loading="lazy" />
+              <div className="about-mockup-overlay">
+                <div className="about-mockup-tag">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                  Peace of mind, guaranteed
+                </div>
+              </div>
+            </div>
+            <div className="about-mockup-accent-card">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ color: "var(--primary)" }}><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2v-4M9 21H5a2 2 0 0 1-2-2v-4m0 0h18"/></svg>
+              <div>
+                <div style={{ fontWeight: 700, fontSize: "0.9rem" }}>Prescription continuity</div>
+                <div style={{ fontSize: "0.78rem", color: "var(--muted-foreground)" }}>Reviewed & planned for you</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ maxWidth: 800, margin: "4rem auto 0" }}>
+          <h2 className="serif" style={{ fontSize: "2rem", marginBottom: "2rem", textAlign: "center" }}>About Working With Us</h2>
+          <div className="about-working-grid">
+            <div className="who-card">
+              <h4>Privacy & Inclusivity</h4>
+              <p>We work with all clients regardless of background. LGBTQ+ individuals, families, retirees — everyone deserves calm, clear guidance.</p>
+            </div>
+            <div className="who-card">
+              <h4>No Medical Advice</h4>
+              <p>We provide navigation and planning support. We help you understand how to access care, not what care to receive.</p>
+            </div>
+            <div className="who-card">
+              <h4>Flexible Appointments</h4>
+              <p>Video or audio-only sessions available. We work around your schedule and comfort level.</p>
+            </div>
+            <div className="who-card">
+              <h4>Built on Experience</h4>
+              <p>We've navigated the U.S., Portuguese, and Spanish healthcare systems firsthand. That experience shapes everything we do.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section className="section bg-secondary">
-      <div className="container">
-        <div className="section-header">
-          <div className="section-eyebrow">What We Do</div>
-          <h2 className="serif">Healthcare Navigation, Not Medical Advice</h2>
-          <p className="text-muted">We help you understand the systems and processes — you make the decisions.</p>
-        </div>
-        <div className="about-working-grid">
-          {[
-            { title: "We help you understand", desc: "Public vs private systems, regional differences, and administrative sequences." },
-            { title: "We help you plan", desc: "Prescription continuity, appointment sequencing, and documentation needs." },
-            { title: "We help you act", desc: "Step-by-step guidance, task tracking, and ongoing support as you settle in." },
-            { title: "We respect your autonomy", desc: "You remain in control of your choices and communications at all times." },
-          ].map((item) => (
-            <div className="about-working-card" key={item.title}>
-              <h4>{item.title}</h4>
-              <p>{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-
     <section className="cta-banner">
-      <div className="cta-bg-pattern"></div>
       <div className="container text-center">
-        <div className="section-eyebrow light">Get Started</div>
-        <h2 className="serif cta-title">Ready to Plan Your Healthcare Transition?</h2>
-        <p>Book a free 15-minute consultation to discuss your specific situation.</p>
-        <Link to="/contact" className="btn btn-accent btn-lg pulse-glow">Book a free consultation</Link>
+        <h2 className="serif cta-title">Ready to get started?</h2>
+        <p>Book a free 15-minute consultation to discuss your situation.</p>
+        <Link to="/contact" className="btn btn-accent btn-lg">Book a free consultation</Link>
       </div>
     </section>
   </>

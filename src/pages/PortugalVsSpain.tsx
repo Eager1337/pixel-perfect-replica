@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 const PortugalVsSpain = () => (
   <>
-    <section className="page-hero">
-      <div className="container">
+    <section className="page-hero" style={{ backgroundImage: "url('/images/portugal square.webp')", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(8,20,6,0.78) 0%,rgba(45,106,45,0.58) 100%)" }}></div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / Compare Countries</div>
         <h1>Portugal vs Spain: Which Is Better for Healthcare?</h1>
         <p>Portugal vs Spain: choosing the right healthcare fit as an American</p>
