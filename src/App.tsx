@@ -1,27 +1,41 @@
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import Index from "./pages/Index.tsx";
-import NotFound from "./pages/NotFound.tsx";
-
-const queryClient = new QueryClient();
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
+import Resources from "./pages/Resources";
+import PortugalVsSpain from "./pages/PortugalVsSpain";
+import PortugalGuide from "./pages/PortugalGuide";
+import SpainGuide from "./pages/SpainGuide";
+import HealthcareOrientation from "./pages/HealthcareOrientation";
+import GuidedSetup from "./pages/GuidedSetup";
+import OngoingCarePartner from "./pages/OngoingCarePartner";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import NotFound from "./pages/NotFound";
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <BrowserRouter>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/faq" element={<FAQ />} />
+        <Route path="/resources" element={<Resources />} />
+        <Route path="/portugal-vs-spain" element={<PortugalVsSpain />} />
+        <Route path="/portugal-guide" element={<PortugalGuide />} />
+        <Route path="/spain-guide" element={<SpainGuide />} />
+        <Route path="/services/healthcare-orientation" element={<HealthcareOrientation />} />
+        <Route path="/services/guided-setup" element={<GuidedSetup />} />
+        <Route path="/services/ongoing-care-partner" element={<OngoingCarePartner />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>
 );
 
 export default App;
