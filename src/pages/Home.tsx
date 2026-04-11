@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
 
-const IMG = "https://sensationalbilly.github.io/Iberiahealthconnect/images";
-
 const Home = () => (
   <>
-    {/* HERO - Olive tree version from live site */}
+    {/* HERO */}
     <section className="olive-hero" id="hero">
       <div className="olive-hero-bg" aria-hidden="true">
-        <img src={`${IMG}/olive%20tree%20granada.webp`} alt="" className="olive-hero-img" />
+        <img src="/images/olive tree granada.webp" alt="" className="olive-hero-img" fetchPriority="high" />
         <div className="olive-hero-overlay"></div>
       </div>
       <div className="olive-hero-content">
@@ -75,7 +73,7 @@ const Home = () => (
         </div>
         <div className="col reveal-left">
           <div className="img-card">
-            <img src={`${IMG}/couple%20market%20portugal.webp`} alt="Two people at a Lisbon market" className="rounded-img" loading="lazy" />
+            <img src="/images/couple market portugal.webp" alt="Two people at a Lisbon market" className="rounded-img" loading="lazy" />
             <div className="expert-badge">
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               Expert-backed
@@ -95,7 +93,7 @@ const Home = () => (
     {/* EXPERTISE BANNER */}
     <section className="expertise-banner">
       <div className="expertise-bg">
-        <img src={`${IMG}/portugal%20trees.webp`} alt="Portuguese landscape" className="expertise-img" loading="lazy" />
+        <img src="/images/portugal trees.webp" alt="Portuguese landscape" className="expertise-img" loading="lazy" />
         <div className="expertise-overlay"></div>
       </div>
       <div className="container expertise-content">
@@ -206,13 +204,13 @@ const Home = () => (
         </div>
         <div className="who-grid">
           {[
-            { img: "retired%20couple%20portugal.webp", alt: "Retired couple in Portugal", title: "Retirees relocating full-time", desc: "Broad provider access and understanding public enrollment timelines." },
-            { img: "family%20portugal.webp", alt: "Family in Portugal", title: "Families with children", desc: "Establishing pediatric pathways and continuity of care documentation." },
-            { img: "warm%20paperwork.webp", alt: "Person reviewing documents", title: "Managing ongoing prescriptions", desc: "Confirming medication names, generic equivalents, and refill processes." },
-            { img: "couple%20spain.webp", alt: "LGBTQ+ couple in Spain", title: "LGBTQ+ individuals & couples", desc: "Extra attention to continuity of care and documentation needs." },
+            { img: "retired couple portugal.webp", alt: "Retired couple in Portugal", title: "Retirees relocating full-time", desc: "Broad provider access and understanding public enrollment timelines." },
+            { img: "family portugal.webp", alt: "Family in Portugal", title: "Families with children", desc: "Establishing pediatric pathways and continuity of care documentation." },
+            { img: "warm paperwork.webp", alt: "Person reviewing documents", title: "Managing ongoing prescriptions", desc: "Confirming medication names, generic equivalents, and refill processes." },
+            { img: "couple spain.webp", alt: "LGBTQ+ couple in Spain", title: "LGBTQ+ individuals & couples", desc: "Extra attention to continuity of care and documentation needs." },
           ].map((card, i) => (
             <div className="who-card reveal-up" style={{ animationDelay: `${0.05 + i * 0.05}s` }} key={card.title}>
-              <img src={`${IMG}/${card.img}`} alt={card.alt} className="who-card-img" loading="lazy" />
+              <img src={`/images/${card.img}`} alt={card.alt} className="who-card-img" loading="lazy" />
               <h4>{card.title}</h4>
               <p>{card.desc}</p>
             </div>
@@ -231,15 +229,15 @@ const Home = () => (
         </div>
         <div className="photo-mosaic">
           {[
-            { img: "rainbow%20umbrellas%20portugal.webp", alt: "Rainbow umbrellas in Portugal", label: "Lisbon, Portugal", tall: true },
-            { img: "portugal%20trams.webp", alt: "Yellow trams in Lisbon", label: "Iconic Lisbon Trams" },
-            { img: "Spain%20yellow%20alley.webp", alt: "Yellow alley in Spain", label: "Andalusia, Spain" },
-            { img: "portugal%20square.webp", alt: "Praça do Comércio at golden hour", label: "Praça do Comércio", tall: true },
-            { img: "portugal%20trees.webp", alt: "Portuguese landscape", label: "Portuguese Countryside" },
-            { img: "spain%20dog%20walk.webp", alt: "Barcelona Gothic Quarter", label: "Barcelona, Spain" },
+            { img: "rainbow umbrellas portugal.webp", alt: "Rainbow umbrellas in Portugal", label: "Lisbon, Portugal", tall: true },
+            { img: "portugal trams.webp", alt: "Yellow trams in Lisbon", label: "Iconic Lisbon Trams" },
+            { img: "Spain yellow alley.webp", alt: "Yellow alley in Spain", label: "Andalusia, Spain" },
+            { img: "portugal square.webp", alt: "Praça do Comércio at golden hour", label: "Praça do Comércio", tall: true },
+            { img: "portugal trees.webp", alt: "Portuguese landscape", label: "Portuguese Countryside" },
+            { img: "spain dog walk.webp", alt: "Barcelona Gothic Quarter", label: "Barcelona, Spain" },
           ].map((tile, i) => (
             <div className={`photo-tile${tile.tall ? " photo-tile--tall" : ""} reveal-up`} style={{ animationDelay: `${0.05 + i * 0.05}s` }} key={tile.label}>
-              <img src={`${IMG}/${tile.img}`} alt={tile.alt} loading="lazy" />
+              <img src={`/images/${tile.img}`} alt={tile.alt} loading="lazy" />
               <div className="photo-tile-label">{tile.label}</div>
             </div>
           ))}
@@ -257,15 +255,15 @@ const Home = () => (
         </div>
         <div className="community-grid">
           {[
-            { img: "retired%20couple%20portugal.webp", alt: "Retired couple enjoying Portugal", tag: "Retirees", desc: "Finding peace and quality care in Portugal's SNS system." },
-            { img: "couple%20spain.webp", alt: "LGBTQ+ couple in Spain", tag: "LGBTQ+ Couples", desc: "Navigating care continuity with confidence and support." },
-            { img: "family%20at%20beach%20portugal.webp", alt: "Family on a Portuguese beach", tag: "Families", desc: "Establishing pediatric pathways before the first day of school." },
-            { img: "young%20people%20cafe%20portugal.webp", alt: "Young people at a Lisbon café", tag: "Young Professionals", desc: "Planning prescriptions and private care from day one." },
-            { img: "student%20spain.webp", alt: "Student in a Spanish plaza", tag: "Individual Relocators", desc: "Getting clarity on the system before the paperwork piles up." },
-            { img: "young%20people%20portugal.webp", alt: "Young people in Portugal", tag: "Digital Nomads", desc: "Understanding visa health requirements and private options." },
+            { img: "retired couple portugal.webp", alt: "Retired couple enjoying Portugal", tag: "Retirees", desc: "Finding peace and quality care in Portugal's SNS system." },
+            { img: "couple spain.webp", alt: "LGBTQ+ couple in Spain", tag: "LGBTQ+ Couples", desc: "Navigating care continuity with confidence and support." },
+            { img: "family at beach portugal.webp", alt: "Family on a Portuguese beach", tag: "Families", desc: "Establishing pediatric pathways before the first day of school." },
+            { img: "young people cafe portugal.webp", alt: "Young people at a Lisbon café", tag: "Young Professionals", desc: "Planning prescriptions and private care from day one." },
+            { img: "student spain.webp", alt: "Student in a Spanish plaza", tag: "Individual Relocators", desc: "Getting clarity on the system before the paperwork piles up." },
+            { img: "young people portugal.webp", alt: "Young people in Portugal", tag: "Digital Nomads", desc: "Understanding visa health requirements and private options." },
           ].map((card, i) => (
             <div className="community-card reveal-up" style={{ animationDelay: `${0.05 + i * 0.07}s` }} key={card.tag}>
-              <img src={`${IMG}/${card.img}`} alt={card.alt} loading="lazy" />
+              <img src={`/images/${card.img}`} alt={card.alt} loading="lazy" />
               <div className="community-card-body">
                 <span className="community-tag">{card.tag}</span>
                 <p>{card.desc}</p>

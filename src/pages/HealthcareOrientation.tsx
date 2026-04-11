@@ -2,8 +2,9 @@ import { Link } from "react-router-dom";
 
 const HealthcareOrientation = () => (
   <>
-    <section className="page-hero">
-      <div className="container">
+    <section className="page-hero" style={{ backgroundImage: "url('/images/warm paperwork.webp')", backgroundSize: "cover", backgroundPosition: "center top", position: "relative" }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(8,20,6,0.80) 0%,rgba(45,106,45,0.60) 100%)" }}></div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / <Link to="/resources">Services</Link> / Tier 1</div>
         <h1>Tier 1: Healthcare Orientation</h1>
         <p>A clear starting point — a single 90-minute working session to review your situation, explain the systems, and map out your next steps.</p>

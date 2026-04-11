@@ -18,8 +18,9 @@ const FAQ = () => {
 
   return (
     <>
-      <section className="page-hero">
-        <div className="container">
+      <section className="page-hero" style={{ backgroundImage: "url('/images/warm paperwork.webp')", backgroundSize: "cover", backgroundPosition: "center top", position: "relative" }}>
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(28,25,23,0.78) 0%,rgba(92,107,58,0.55) 100%)" }}></div>
+        <div className="container" style={{ position: "relative", zIndex: 1 }}>
           <div className="breadcrumb"><Link to="/">Home</Link> / FAQ</div>
           <h1>Frequently Asked Questions</h1>
           <p>Everything you need to know about healthcare planning for Portugal or Spain.</p>

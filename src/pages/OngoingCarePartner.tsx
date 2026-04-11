@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 
 const OngoingCarePartner = () => (
   <>
-    <section className="page-hero">
-      <div className="container">
+    <section className="page-hero" style={{ backgroundImage: "url('/images/retirement portugal.webp')", backgroundSize: "cover", backgroundPosition: "center", position: "relative" }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(8,20,6,0.80) 0%,rgba(45,106,45,0.60) 100%)" }}></div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / <Link to="/resources">Services</Link> / Tier 3</div>
         <h1>Tier 3: Ongoing Care Partner</h1>
-        <p>Quarterly check-ins and ongoing admin/navigation support as your needs change after you arrive.</p>
+        <p>Support after you arrive — quarterly check-ins and ongoing admin/navigation support as your needs change.</p>
       </div>
     </section>
     <section className="section">
@@ -15,31 +16,34 @@ const OngoingCarePartner = () => (
           <div>
             <h2 className="serif" style={{ fontSize: "2rem", marginBottom: "1.5rem" }}>What's Included</h2>
             <ul className="check-list" style={{ marginBottom: "2rem" }}>
-              <li>Everything in Tier 1 & 2</li>
-              <li>Quarterly check-in sessions to review and adjust your plan</li>
-              <li>Ongoing navigation support as your healthcare needs evolve</li>
-              <li>Administrative support for new situations (specialist referrals, prescription changes, etc.)</li>
-              <li>Priority email support with faster response times</li>
+              <li>Everything in Tier 1 & Tier 2</li>
+              <li>Quarterly Check-ins — video or audio-only sessions</li>
+              <li>Ongoing email support between sessions, with documents and checklists</li>
+              <li>Updates to your healthcare plan as needs evolve</li>
+              <li>Ongoing admin/navigation support as your needs change after you arrive</li>
+              <li>Long-term peace of mind as your situation changes</li>
             </ul>
             <h2 className="serif" style={{ fontSize: "1.75rem", marginBottom: "1rem" }}>Who This Is For</h2>
-            <p style={{ color: "var(--muted-foreground)", marginBottom: "1rem" }}>This tier is ideal if you're:</p>
+            <p style={{ color: "var(--muted-foreground)", marginBottom: "1rem" }}>This tier is ideal if you:</p>
             <ul className="check-list">
-              <li>Already in Portugal or Spain and want ongoing support</li>
-              <li>Managing complex healthcare needs that change over time</li>
-              <li>A family that wants continued guidance as children grow</li>
-              <li>Someone who values having a trusted partner for healthcare questions</li>
+              <li>Want long-term support, not just pre-move planning</li>
+              <li>Have complex ongoing healthcare needs</li>
+              <li>Are managing prescriptions that require regular attention</li>
+              <li>Want a trusted partner as your situation evolves after arrival</li>
+              <li>Are ready for long-term peace of mind</li>
             </ul>
           </div>
           <div>
             <div className="tier-card service-sticky-card">
               <div className="tier-label">Tier 3</div>
               <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>Ongoing Care Partner</h3>
-              <p style={{ color: "var(--muted-foreground)", marginBottom: "1.5rem" }}>Long-term healthcare navigation partnership with quarterly check-ins.</p>
+              <p style={{ color: "var(--muted-foreground)", marginBottom: "1.5rem" }}>Quarterly check-ins and ongoing admin/navigation support as your needs change after you arrive.</p>
               <ul style={{ listStyle: "none", marginBottom: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
-                <li style={{ fontSize: "0.9rem", color: "var(--muted-foreground)" }}>✓ Everything in Tier 1 & 2</li>
-                <li style={{ fontSize: "0.9rem", color: "var(--muted-foreground)" }}>✓ Quarterly check-ins</li>
+                <li style={{ fontSize: "0.9rem", color: "var(--muted-foreground)" }}>✓ Includes Tier 1 & Tier 2</li>
+                <li style={{ fontSize: "0.9rem", color: "var(--muted-foreground)" }}>✓ Quarterly check-ins (video or audio)</li>
+                <li style={{ fontSize: "0.9rem", color: "var(--muted-foreground)" }}>✓ Ongoing email support</li>
+                <li style={{ fontSize: "0.9rem", color: "var(--muted-foreground)" }}>✓ Plan updates as needs evolve</li>
                 <li style={{ fontSize: "0.9rem", color: "var(--muted-foreground)" }}>✓ Long-term navigation support</li>
-                <li style={{ fontSize: "0.9rem", color: "var(--muted-foreground)" }}>✓ Priority email support</li>
               </ul>
               <Link to="/contact" className="btn btn-accent" style={{ width: "100%", textAlign: "center" }}>Book a Consult</Link>
               <p style={{ fontSize: "0.8rem", color: "var(--muted-foreground)", textAlign: "center", marginTop: "0.75rem" }}>Not sure if this is the right tier? <Link to="/contact" style={{ color: "var(--primary)" }}>Book a free 15-min call</Link></p>
@@ -48,14 +52,11 @@ const OngoingCarePartner = () => (
         </div>
       </div>
     </section>
-    <section className="section bg-secondary">
-      <div className="container" style={{ textAlign: "center" }}>
-        <h2 className="serif" style={{ marginBottom: "1rem" }}>Compare All Tiers</h2>
-        <p style={{ color: "var(--muted-foreground)", marginBottom: "2rem" }}>See how Tier 3 compares to Healthcare Orientation and Guided Setup.</p>
-        <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
-          <Link to="/services/healthcare-orientation" className="btn btn-outline">Tier 1: Healthcare Orientation →</Link>
-          <Link to="/services/guided-setup" className="btn btn-outline">Tier 2: Guided Setup →</Link>
-        </div>
+    <section className="cta-banner">
+      <div className="container text-center">
+        <h2 className="serif cta-title">Ready for long-term peace of mind?</h2>
+        <p>Book a free 15-minute consultation to discuss whether Tier 3 is right for your situation.</p>
+        <Link to="/contact" className="btn btn-accent btn-lg">Book your free 15-minute consultation</Link>
       </div>
     </section>
   </>
