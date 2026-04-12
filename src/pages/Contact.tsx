@@ -2,8 +2,14 @@ import { Link } from "react-router-dom";
 
 const Contact = () => (
   <>
-    <section className="page-hero">
-      <div className="container">
+    <section className="page-hero" style={{
+      backgroundImage: "url('/images/young people cafe portugal.webp')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      position: "relative"
+    }}>
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(135deg,rgba(8,20,6,0.80) 0%,rgba(45,106,45,0.60) 100%)" }}></div>
+      <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / Book a Consultation</div>
         <h1>Book a Free 15-Minute Consultation</h1>
         <p>Pick a date and time that works for you. We'll confirm your appointment within 24 hours.</p>
