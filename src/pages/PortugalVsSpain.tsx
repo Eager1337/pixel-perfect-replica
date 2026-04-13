@@ -14,7 +14,7 @@ const PortugalVsSpain = () => (
     <section className="section">
       <div className="container">
         <div className="prose-content">
-          <p>Both Portugal and Spain offer high-quality healthcare systems that are accessible to residents — but they work differently, and the right choice depends on your situation, visa type, and healthcare needs.</p>
+          <p>Both Portugal and Spain offer high-quality healthcare systems that are accessible to residents, but they work differently, and the right choice depends on your situation, visa type, and healthcare needs.</p>
 
           <h2 className="serif">Side-by-Side Comparison</h2>
           <div className="compare-table-wrap">
