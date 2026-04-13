@@ -14,8 +14,8 @@
   --accent-foreground: #1c1710;
   --border: #e8d9c4;
   --radius: 0.75rem;
-  --font-sans: 'DM Sans', sans-serif;
-  --font-serif: 'Nekst', 'DM Sans', sans-serif;
+  --font-sans: 'Corpid', 'Corpid Light', sans-serif;
+  --font-serif: 'Nekst', 'Corpid', sans-serif;
 }
 
 /* ===== RESET ===== */
@@ -39,7 +39,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ── Nekst for all headings, DM Sans for body ── */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Nekst', 'DM Sans', sans-serif;
+  font-family: 'Nekst', 'Corpid', sans-serif;
   line-height: 1.15;
   letter-spacing: -0.02em;
 }
@@ -50,7 +50,7 @@ h4 { font-weight: 600; }
 h5, h6 { font-weight: 600; letter-spacing: 0; }
 
 p, li, td, th, label, input, textarea, select, span {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Corpid', 'Corpid Light', sans-serif;
 }
 
 /* ===== LAYOUT ===== */
@@ -64,7 +64,7 @@ p, li, td, th, label, input, textarea, select, span {
 .section-header { text-align: center; margin-bottom: 3.5rem; }
 .section-header h2 { font-size: 2.25rem; margin-bottom: 1rem; }
 .section-header p { font-size: 1.125rem; color: var(--muted-foreground); max-width: 600px; margin: 0 auto; }
-.serif { font-family: 'Nekst', 'DM Sans', sans-serif; }
+.serif { font-family: 'Nekst', 'Corpid', sans-serif; }
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 
 /* ===== BUTTONS ===== */
