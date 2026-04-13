@@ -7,7 +7,7 @@ const About = () => (
       <div className="container" style={{ position: "relative", zIndex: 1, paddingBottom: "3rem" }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / About</div>
         <h1>Built by Americans, <em style={{ fontStyle: "italic", color: "var(--accent)" }}>for</em> Americans moving abroad.</h1>
-        <p style={{ maxWidth: 560, color: "rgba(255,255,255,0.85)", marginTop: "0.75rem" }}>We've navigated the U.S., Portuguese, and Spanish healthcare systems firsthand — so you don't have to figure it out alone.</p>
+        <p style={{ maxWidth: 560, color: "rgba(255,255,255,0.85)", marginTop: "0.75rem" }}>We've navigated the U.S., Portuguese, and Spanish healthcare systems firsthand, so you don't have to figure it out alone.</p>
         <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap", marginTop: "1.5rem" }}>
           <Link to="/contact" className="btn btn-accent btn-lg">Book a free consultation</Link>
           <a href="#approach" className="btn btn-ghost-white">Our Approach ↓</a>
@@ -21,9 +21,9 @@ const About = () => (
           <div>
             <div className="section-eyebrow">Our Approach</div>
             <h2 className="serif" style={{ fontSize: "2.25rem", marginBottom: "1.5rem" }}>Calm, Structured, Empathetic</h2>
-            <p style={{ color: "var(--muted-foreground)", marginBottom: "1.25rem" }}>Iberia Health Connect was created to bridge the gap between what Americans expect from healthcare and how healthcare actually works in Portugal and Spain — calmly and clearly.</p>
+            <p style={{ color: "var(--muted-foreground)", marginBottom: "1.25rem" }}>Iberia Health Connect was created to bridge the gap between what Americans expect from healthcare and how healthcare actually works in Portugal and Spain, calmly and clearly.</p>
             <p style={{ color: "var(--muted-foreground)", marginBottom: "1.25rem" }}>We believe families can benefit when someone explains the structure and processes step-by-step. Articles provide education, but planning requires personalization.</p>
-            <p style={{ color: "var(--muted-foreground)", marginBottom: "1.25rem" }}>We are not a medical practice. We are healthcare navigators — helping you understand systems, sequences, and administrative steps so you can make informed decisions and access care confidently.</p>
+            <p style={{ color: "var(--muted-foreground)", marginBottom: "1.25rem" }}>We are not a medical practice. We are healthcare navigators, helping you understand systems, sequences, and administrative steps so you can make informed decisions and access care confidently.</p>
           </div>
           <div className="about-approach-mockup">
             <div className="about-mockup-card">
@@ -50,7 +50,7 @@ const About = () => (
           <div className="about-working-grid">
             <div className="who-card">
               <h4>Privacy & Inclusivity</h4>
-              <p>We work with all clients regardless of background. LGBTQ+ individuals, families, retirees — everyone deserves calm, clear guidance.</p>
+              <p>We work with all clients regardless of background. LGBTQ+ individuals, families, retirees: everyone deserves calm, clear guidance.</p>
             </div>
             <div className="who-card">
               <h4>No Medical Advice</h4>

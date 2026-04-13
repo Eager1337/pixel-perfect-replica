@@ -62,7 +62,7 @@ const Home = () => (
           <h2 className="serif">You don't have to figure this out alone.</h2>
           <p className="text-muted">We help you navigate the process and stay organized. You remain in control of your choices and communications.</p>
           <ul className="check-list">
-            {["Understand public vs private systems", "Plan your first 30–90 days strategically", "Prepare for prescription continuity", "Avoid common administrative pitfalls"].map((item) => (
+            {["Understand public vs private systems", "Plan your first 30 to 90 days strategically", "Prepare for prescription continuity", "Avoid common administrative pitfalls"].map((item) => (
               <li key={item}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: "var(--primary)", flexShrink: 0, marginTop: "2px" }}><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
                 {item}
@@ -100,7 +100,7 @@ const Home = () => (
         <div className="expertise-text reveal-up">
           <div className="section-eyebrow light">Healthcare Expertise</div>
           <h2 className="serif expertise-title">Backed by deep knowledge of both systems.</h2>
-          <p>We've navigated the U.S., Portuguese, and Spanish healthcare systems firsthand. That experience shapes every plan we build — so you don't have to learn the hard way.</p>
+          <p>We've navigated the U.S., Portuguese, and Spanish healthcare systems firsthand. That experience shapes every plan we build, so you don't have to learn the hard way.</p>
           <div className="expertise-pills">
             {["SNS Portugal", "SNS Spain", "Prescription Continuity", "Visa Health Requirements", "LGBTQ+ Care"].map((pill) => (
               <span className="pill" key={pill}>{pill}</span>
@@ -225,7 +225,7 @@ const Home = () => (
         <div className="section-header reveal-up">
           <div className="section-eyebrow">Life in Iberia</div>
           <h2 className="serif">Your new home, beautifully waiting</h2>
-          <p className="text-muted">From Lisbon trams to Granada olive groves — this is the life you're moving toward.</p>
+          <p className="text-muted">From Lisbon trams to Granada olive groves, this is the life you're moving toward.</p>
         </div>
         <div className="photo-mosaic">
           {[

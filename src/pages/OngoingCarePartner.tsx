@@ -7,7 +7,7 @@ const OngoingCarePartner = () => (
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / <Link to="/resources">Services</Link> / Tier 3</div>
         <h1>Tier 3: Ongoing Care Partner</h1>
-        <p>Support after you arrive — quarterly check-ins and ongoing admin/navigation support as your needs change.</p>
+        <p>Support after you arrive. Quarterly check-ins and ongoing admin/navigation support as your needs change.</p>
       </div>
     </section>
     <section className="section">
@@ -17,7 +17,7 @@ const OngoingCarePartner = () => (
             <h2 className="serif" style={{ fontSize: "2rem", marginBottom: "1.5rem" }}>What's Included</h2>
             <ul className="check-list" style={{ marginBottom: "2rem" }}>
               <li>Everything in Tier 1 & Tier 2</li>
-              <li>Quarterly Check-ins — video or audio-only sessions</li>
+              <li>Quarterly Check-ins: video or audio-only sessions</li>
               <li>Ongoing email support between sessions, with documents and checklists</li>
               <li>Updates to your healthcare plan as needs evolve</li>
               <li>Ongoing admin/navigation support as your needs change after you arrive</li>

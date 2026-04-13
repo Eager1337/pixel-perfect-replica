@@ -7,7 +7,7 @@ const HealthcareOrientation = () => (
       <div className="container" style={{ position: "relative", zIndex: 1 }}>
         <div className="breadcrumb"><Link to="/">Home</Link> / <Link to="/resources">Services</Link> / Tier 1</div>
         <h1>Tier 1: Healthcare Orientation</h1>
-        <p>A clear starting point — a single 90-minute working session to review your situation, explain the systems, and map out your next steps.</p>
+        <p>A clear starting point. A single 90-minute working session to review your situation, explain the systems, and map out your next steps.</p>
       </div>
     </section>
     <section className="section">
@@ -16,11 +16,11 @@ const HealthcareOrientation = () => (
           <div>
             <h2 className="serif" style={{ fontSize: "2rem", marginBottom: "1.5rem" }}>What's Included</h2>
             <ul className="check-list" style={{ marginBottom: "2rem" }}>
-              <li>System Review & Education — understanding public vs private pathways based on your visa</li>
-              <li>Appointment Sequencing — mapping out your first appointments strategically</li>
-              <li>Prescription Planning — reviewing your prescription needs and identifying continuity gaps</li>
-              <li>Next Steps Action Plan — creating a high-level action plan for your first months</li>
-              <li>Administrative overview — understanding what documentation you may need</li>
+              <li>System Review & Education: understanding public vs private pathways based on your visa</li>
+              <li>Appointment Sequencing: mapping out your first appointments strategically</li>
+              <li>Prescription Planning: reviewing your prescription needs and identifying continuity gaps</li>
+              <li>Next Steps Action Plan: creating a high-level action plan for your first months</li>
+              <li>Administrative overview: understanding what documentation you may need</li>
             </ul>
             <h2 className="serif" style={{ fontSize: "1.75rem", marginBottom: "1rem" }}>Who This Is For</h2>
             <p style={{ color: "var(--muted-foreground)", marginBottom: "1rem" }}>This tier is ideal if you're:</p>
