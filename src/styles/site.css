@@ -37,7 +37,7 @@ body {
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 
-/* ── Nekst for all headings, DM Sans for body ── */
+/* ── Nekst for all headings, Corpid for body ── */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Nekst', 'Corpid', sans-serif;
   line-height: 1.15;
@@ -544,7 +544,7 @@ p, li, td, th, label, input, textarea, select, span {
 
 /* ===== TIER EXTRAS ===== */
 .tier-num {
-  font-size: 3rem; font-weight: 700; font-family: 'Nekst', 'DM Sans', sans-serif;
+  font-size: 3rem; font-weight: 700; font-family: 'Nekst', 'Corpid', sans-serif;
   color: var(--border); line-height: 1; margin-bottom: -0.5rem;
 }
 .tier-num.accent { color: rgba(193,127,58,0.25); }
@@ -1101,7 +1101,7 @@ p, li, td, th, label, input, textarea, select, span {
   padding: 1rem 1.75rem; width: fit-content;
 }
 .stat { text-align: center; }
-.stat-num { display: block; font-size: 1.75rem; font-weight: 700; color: white; font-family: 'Nekst', 'DM Sans', sans-serif; line-height: 1; }
+.stat-num { display: block; font-size: 1.75rem; font-weight: 700; color: white; font-family: 'Nekst', 'Corpid', sans-serif; line-height: 1; }
 .stat-num small { font-size: 1rem; }
 .stat-label { font-size: 0.75rem; color: rgba(255,255,255,0.7); margin-top: 0.2rem; display: block; }
 .stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.2); }
@@ -1387,7 +1387,7 @@ p, li, td, th, label, input, textarea, select, span {
   border-radius: 1.25rem;
 }
 .services-about-text {
-  font-family: 'Nekst', 'DM Sans', sans-serif;
+  font-family: 'Nekst', 'Corpid', sans-serif;
   font-size: 1.08rem;
   line-height: 1.85;
   color: #1a1a1a;
@@ -1409,7 +1409,7 @@ p, li, td, th, label, input, textarea, select, span {
 .section-header h2 {
   font-size: 2.25rem;
   margin-bottom: 1rem;
-  font-family: 'Nekst', 'DM Sans', sans-serif;
+  font-family: 'Nekst', 'Corpid', sans-serif;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
@@ -1418,11 +1418,11 @@ p, li, td, th, label, input, textarea, select, span {
   color: var(--muted-foreground);
   max-width: 600px;
   margin: 0 auto;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Corpid', sans-serif;
   line-height: 1.7;
 }
 .section-eyebrow {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Corpid', sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
